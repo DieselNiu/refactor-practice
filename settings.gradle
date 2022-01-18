@@ -1,0 +1,4 @@
+rootProject.name = 'refactor-practice'
+
+include 'zero-bootstrap'
+include 'zero-identity'
