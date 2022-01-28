@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.dieselniu.charpter7.extractClass3.PersonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-27T03:55:42" hostname="MacBook-Pro.local" time="0.365">
+  <properties/>
+  <testcase name="should_be_able_to_get_telephone()" classname="com.github.dieselniu.charpter7.extractClass3.PersonTest" time="0.365"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
