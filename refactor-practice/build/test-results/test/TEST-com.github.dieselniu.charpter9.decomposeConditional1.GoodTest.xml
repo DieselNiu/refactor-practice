@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.dieselniu.charpter9.decomposeConditional1.GoodTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-02-09T09:13:22" hostname="MacBook-Pro.local" time="0.286">
+  <properties/>
+  <testcase name="should_be_able_to_calculate_good_charge_when_not_in_summer()" classname="com.github.dieselniu.charpter9.decomposeConditional1.GoodTest" time="0.278"/>
+  <testcase name="should_be_able_to_calculate_good_charge_when_in_summer()" classname="com.github.dieselniu.charpter9.decomposeConditional1.GoodTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

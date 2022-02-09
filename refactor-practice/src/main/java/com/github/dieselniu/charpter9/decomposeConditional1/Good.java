@@ -4,26 +4,32 @@ import java.time.Instant;
 import java.util.Date;
 
 public class Good {
-    private int quantity;
-    private int charge;
-    private Date date;
+    private Double charge;
+    private Double _summerRate;
+    private Double _winterRate;
+    private Double _winterServiceCharge;
 
-    public Good(int quantity, int charge, Date date) {
-        this.quantity = quantity;
+    public Good(Double charge, Double _summerRate, Double _winterRate, Double _winterServiceCharge) {
         this.charge = charge;
-        this.date = date;
+        this._summerRate = _summerRate;
+        this._winterRate = _winterRate;
+        this._winterServiceCharge = _winterServiceCharge;
     }
 
-    public int quantity() {
-        return quantity;
-    }
-
-    public int charge() {
+    public Double charge() {
         return charge;
     }
 
-    public Date date() {
-        return date;
+    public Double _summerRate() {
+        return _summerRate;
+    }
+
+    public Double _winterRate() {
+        return _winterRate;
+    }
+
+    public Double _winterServiceCharge() {
+        return _winterServiceCharge;
     }
 
     public static Date SUMMER_START() {
@@ -38,11 +44,10 @@ public class Good {
     private static Date SUMMER_END = Date.from(Instant.parse("2007-12-03T10:15:30.00Z"));
 
 
-    public int totalCharge( int _summerRate, int _winterServiceCharge, int _winterRate) {
+    public double totalCharge(Date date, int quantity) {
         if (date.before(SUMMER_START) || date.after(SUMMER_END))
             charge = quantity * _winterRate + _winterServiceCharge;
         else charge = quantity * _summerRate;
-
         return charge;
     }
 
