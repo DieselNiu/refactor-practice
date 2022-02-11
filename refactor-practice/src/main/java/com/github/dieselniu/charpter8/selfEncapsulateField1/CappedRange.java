@@ -10,7 +10,6 @@ public class CappedRange extends IntRange {
 
     public CappedRange(int _low, int _high, int cap) {
         super(_low, _high);
-
     }
 
     @Override
